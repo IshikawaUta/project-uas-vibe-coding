@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/IshikawaUta/one-for-all-framework/refs/heads/main/public/images/logo.png" width="500" height="500" alt="OFA Framework Logo">
-</p>
-
 # ⚡ One-For-All (OFA) Framework v5.2.0
 
 [![Ruby Version](https://img.shields.io/badge/ruby-%3E%3D%203.0.0-red.svg)](https://www.ruby-lang.org/)
