@@ -41,5 +41,3 @@ Thumbs.db
 coverage/
 test/tmp/
 test/reports/
-
-Procfile
