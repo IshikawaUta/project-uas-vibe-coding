@@ -1,0 +1,8 @@
+{
+  "auth": true,
+  "cms": true,
+  "type": "portfolio",
+  "theme": "light_glass",
+  "storage": "cloudinary",
+  "rich_text": false
+}

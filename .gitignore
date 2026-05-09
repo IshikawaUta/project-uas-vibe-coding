@@ -1,0 +1,43 @@
+# Ignore environment variables and secrets
+.env
+.env.local
+.env.*.local
+
+# Ignore database files
+db/*.sqlite3
+db/*.sqlite3-journal
+db/*.db
+db/*.db-journal
+
+# Ignore logs
+log/*.log
+logs/*.log
+
+# Ignore temporary files
+tmp/
+*.swp
+*.swo
+
+# Ignore Ruby dependencies and bundle
+.bundle/
+vendor/bundle/
+bin/
+
+# Ignore uploads (if using local storage)
+public/uploads/*
+!public/uploads/.keep
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE settings
+.vscode/
+.idea/
+.project
+.settings/
+
+# Ignore test coverage and results
+coverage/
+test/tmp/
+test/reports/

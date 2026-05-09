@@ -1,0 +1,146 @@
+<div class="header-section anime-element" style="margin-bottom: 3rem;">
+    <div class="badge-premium">Portofolio Saya</div>
+    <h1 class="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight">Karya Kreatif & <br class="hidden md:block">Solusi Digital</h1>
+    <p class="text-lg md:text-xl text-slate-500 max-w-3xl">Menampilkan karya terbaik saya, perjalanan kreatif, dan eksperimen teknik dalam membangun masa depan digital yang lebih baik.</p>
+</div>
+
+<!-- Stats Section -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-16 md:mb-20">
+    <div class="glass-card !p-6 md:!p-8 text-center group">
+        <div class="text-3xl md:text-4xl font-black text-primary mb-2 group-hover:scale-110 transition-transform">50+</div>
+        <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-400">Proyek Selesai</div>
+    </div>
+    <div class="glass-card !p-6 md:!p-8 text-center group">
+        <div class="text-3xl md:text-4xl font-black text-secondary mb-2 group-hover:scale-110 transition-transform">12+</div>
+        <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-400">Klien Bahagia</div>
+    </div>
+    <div class="glass-card !p-6 md:!p-8 text-center group">
+        <div class="text-3xl md:text-4xl font-black text-primary mb-2 group-hover:scale-110 transition-transform">5+</div>
+        <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-400">Tahun Pengalaman</div>
+    </div>
+    <div class="glass-card !p-6 md:!p-8 text-center group">
+        <div class="text-3xl md:text-4xl font-black text-secondary mb-2 group-hover:scale-110 transition-transform">24/7</div>
+        <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-400">Dukungan Teknis</div>
+    </div>
+</div>
+
+<!-- Tech Stack Section -->
+<div class="mb-16 md:mb-20">
+    <h2 class="text-2xl md:text-3xl font-black mb-8 md:mb-10 text-center">Teknologi yang Digunakan</h2>
+    <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+        <div class="flex items-center gap-3 px-4 md:px-6 py-2.5 md:py-3 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl hover:border-primary transition-all duration-300 group cursor-default">
+            <i data-lucide="code-2" class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:rotate-12 transition-transform"></i>
+            <span class="font-bold text-sm md:text-base">Ruby on Rails</span>
+        </div>
+        <div class="flex items-center gap-3 px-4 md:px-6 py-2.5 md:py-3 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl hover:border-secondary transition-all duration-300 group cursor-default">
+            <i data-lucide="layout" class="w-5 h-5 md:w-6 md:h-6 text-secondary group-hover:rotate-12 transition-transform"></i>
+            <span class="font-bold text-sm md:text-base">React / Next.js</span>
+        </div>
+        <div class="flex items-center gap-3 px-4 md:px-6 py-2.5 md:py-3 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl hover:border-primary transition-all duration-300 group cursor-default">
+            <i data-lucide="database" class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:rotate-12 transition-transform"></i>
+            <span class="font-bold text-sm md:text-base">PostgreSQL</span>
+        </div>
+        <div class="flex items-center gap-3 px-4 md:px-6 py-2.5 md:py-3 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl hover:border-secondary transition-all duration-300 group cursor-default">
+            <i data-lucide="wind" class="w-5 h-5 md:w-6 md:h-6 text-secondary group-hover:rotate-12 transition-transform"></i>
+            <span class="font-bold text-sm md:text-base">Tailwind CSS</span>
+        </div>
+        <div class="flex items-center gap-3 px-4 md:px-6 py-2.5 md:py-3 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl hover:border-primary transition-all duration-300 group cursor-default">
+            <i data-lucide="server" class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:rotate-12 transition-transform"></i>
+            <span class="font-bold text-sm md:text-base">Docker / AWS</span>
+        </div>
+    </div>
+</div>
+
+<div class="flex items-center justify-between mb-8 md:mb-10">
+    <h2 class="text-2xl md:text-3xl font-black">Proyek Pilihan</h2>
+    <div class="h-px flex-1 bg-white/10 mx-4 md:mx-8 hidden sm:block"></div>
+</div>
+
+<div class="portfolio-grid grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 text-left">
+    <% if @projects.empty? %>
+        <div class="glass-card col-span-full py-20 text-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-primary/10 text-primary rounded-2xl md:rounded-3xl flex items-center justify-center mx-auto mb-6 text-2xl md:text-3xl">
+                <i class="fas fa-folder-open"></i>
+            </div>
+            <p class="text-lg md:text-xl font-bold text-slate-400">Belum ada proyek yang ditampilkan.</p>
+        </div>
+    <% end %>
+
+    <% @projects.each do |project| %>
+    <div class="project-card glass-card flex flex-col h-full !p-0 group">
+        <div class="card-glow"></div>
+        
+        <div class="relative overflow-hidden aspect-video transition-transform duration-700">
+            <% if project.image_url && !project.image_url.empty? %>
+                <img src="<%= project.image_url %>" alt="<%= project.title %>" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <% else %>
+                <div class="w-full h-full bg-gradient-to-br from-primary to-secondary opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            <% end %>
+            <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-60"></div>
+        </div>
+        
+        <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+            <div class="badge-premium">Proyek Unggulan</div>
+            <h3 class="text-xl md:text-2xl font-black mb-3 md:mb-4 tracking-tight group-hover:text-primary transition-colors"><%= project.title %></h3>
+            
+            <div class="text-slate-500 dark:text-slate-400 text-xs md:text-sm leading-relaxed mb-6 md:mb-8 flex-grow">
+                <%= markdown(project.description.split("\n")[0..2].join("\n") + "...") %>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-auto pt-4 md:pt-6 border-t border-white/5 gap-4">
+                <% if project.link && !project.link.empty? %>
+                    <a href="<%= project.link %>" target="_blank" class="btn-premium w-full sm:w-auto !px-5 md:!px-6 !py-2 md:!py-2.5 !text-xs md:!text-sm">
+                        <i class="fas fa-external-link-alt mr-2"></i> Demo Langsung
+                    </a>
+                <% end %>
+                <a href="/projects/<%= project.slug %>" class="group/link flex items-center gap-2 text-xs md:text-sm font-bold text-slate-500 hover:text-primary transition-colors">
+                    Studi Kasus <i class="fas fa-arrow-right group-hover/link:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <% end %>
+</div>
+
+<!-- CTA Section -->
+<div class="glass-card !p-8 md:!p-16 text-center mt-20 md:mt-32 relative overflow-hidden group border-2 border-primary/20">
+    <div class="absolute -top-24 -right-24 w-64 md:w-80 h-64 md:h-80 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-700"></div>
+    <div class="absolute -bottom-24 -left-24 w-64 md:w-80 h-64 md:h-80 bg-secondary/20 rounded-full blur-3xl group-hover:bg-secondary/30 transition-all duration-700"></div>
+    
+    <div class="relative z-10">
+        <h2 class="text-3xl md:text-5xl font-black mb-6 md:mb-8">Siap Memulai Proyek Anda?</h2>
+        <p class="text-lg md:text-xl text-slate-400 mb-8 md:mb-12 max-w-2xl mx-auto">Mari berkolaborasi untuk mewujudkan ide brilian Anda menjadi kenyataan digital yang luar biasa.</p>
+        <div class="flex flex-wrap justify-center">
+            <a href="mailto:hello@example.com" class="btn-premium w-full sm:w-auto !text-base md:!text-lg !px-8 md:!px-12 !py-4 md:!py-5">
+                Hubungi Saya Sekarang <i class="fas fa-paper-plane ml-2"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Refresh Lucide icons
+        lucide.createIcons();
+
+        anime({
+            targets: '.header-section',
+            translateY: [20, 0],
+            opacity: [0, 1],
+            duration: 800,
+            easing: 'easeOutCubic',
+            delay: 400
+        });
+
+        anime({
+            targets: '.project-card',
+            translateY: [50, 0],
+            scale: [0.95, 1],
+            opacity: [0, 1],
+            duration: 800,
+            delay: anime.stagger(150, {start: 600}),
+            easing: 'easeOutExpo'
+        });
+    });
+</script>
+
